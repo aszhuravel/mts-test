@@ -4,7 +4,7 @@
 
 # Использование
 
-Создание задание
+Создание задания
 ```sh
 curl -XPOST https://nameless-fortress-97641.herokuapp.com/task/
 
@@ -15,5 +15,5 @@ curl -XPOST https://nameless-fortress-97641.herokuapp.com/task/
 ```sh
 curl -XGET https://nameless-fortress-97641.herokuapp.com/task/7bd5e54e-0bc2-4d1d-ab5f-b48e00af5c20
 
-{"state":"RUNNING","updated":"2018-10-15T17:52:38.972Z"}
+{"state":"RUNNING","timestamp":"2018-10-15T17:52:38.972Z"}
 ```
