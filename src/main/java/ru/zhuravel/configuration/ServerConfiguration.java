@@ -31,6 +31,14 @@ public class ServerConfiguration {
         Server server = JettyHttpContainerFactory.createServer(baseUri, resourceConfig);
         server.start();
 
+        Runtime.getRuntime().addShutdownHook(new Thread(() -> {
+            try {
+                server.stop();
+            } catch (Exception e) {
+                // ignore;
+            }
+        }));
+
         return server;
     }
 
