@@ -5,7 +5,7 @@ import java.util.UUID;
 import ru.zhuravel.entity.Task;
 
 public interface DatabaseService {
-    UUID create();
+    Task create();
 
     Task get(UUID id);
 

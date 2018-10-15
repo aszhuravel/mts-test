@@ -15,9 +15,8 @@ public class DatabaseServiceImpl implements DatabaseService {
     @Autowired
     private TaskRepository taskRepository;
 
-    public UUID create() {
-        Task createdTask = taskRepository.saveAndFlush(new Task());
-        return createdTask.getId();
+    public Task create() {
+        return taskRepository.saveAndFlush(new Task());
     }
 
     public void updateState(UUID id, Task.State state) {

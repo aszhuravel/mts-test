@@ -39,9 +39,14 @@ public class TaskRemoteServiceImpl implements TaskRemoteService {
     }
 
     public Response create() {
-        UUID id = databaseService.create();
-        workService.schedule(id);
-        return Response.accepted().entity(id).build();
+        Task task = databaseService.create();
+        workService.schedule(task.getId());
+
+        // не возвращаем state и timestamp
+        task.setState(null);
+        task.setTimestamp(null);
+
+        return Response.accepted().entity(task).build();
     }
 
 }

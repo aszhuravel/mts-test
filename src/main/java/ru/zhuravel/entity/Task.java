@@ -19,7 +19,7 @@ public class Task {
     private State state = State.CREATED;
 
     @Column
-    private Date updated = new Date();
+    private Date timestamp = new Date();
 
     public UUID getId() {
         return id;
@@ -37,12 +37,12 @@ public class Task {
         this.state = state;
     }
 
-    public Date getUpdated() {
-        return updated;
+    public Date getTimestamp() {
+        return timestamp;
     }
 
-    public void setUpdated(Date updated) {
-        this.updated = updated;
+    public void setTimestamp(Date timestamp) {
+        this.timestamp = timestamp;
     }
 
     public enum State {
