@@ -8,7 +8,7 @@
 ```sh
 curl -XPOST https://nameless-fortress-97641.herokuapp.com/task/
 
-{"value":"7bd5e54e-0bc2-4d1d-ab5f-b48e00af5c20"}
+{"id":"7bd5e54e-0bc2-4d1d-ab5f-b48e00af5c20"}
 ```
 
 Получение статуса 
