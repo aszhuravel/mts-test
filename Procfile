@@ -1,0 +1,1 @@
+web: java -Dserver.port=$PORT -jar target/api-1.0-jar-with-dependencies.jar
