@@ -1,6 +1,6 @@
 # mts-test
 
-Простой REST сервис имитирующий очередь заданий.
+Простой REST сервис имитирующий очередь заданий. Технологии: jetty, jersey, h2 in memory, spring data jpa, spring core.
 
 # Использование
 
